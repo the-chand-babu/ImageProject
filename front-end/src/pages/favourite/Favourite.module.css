@@ -1,0 +1,114 @@
+.mainContainer{
+text-align: center;
+
+}
+
+
+.gridContainer{
+    width: 100%;
+    margin: 0px auto;
+    columns: 4;
+    column-gap: 10px;
+    padding: 20px;
+    /* border: 1px solid red; */
+
+}
+
+.gridContainer> div{
+    width: 380px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    break-inside: avoid;
+    /* background-color: red; */
+position: relative;
+}
+
+.gridContainer>div>img{
+    width: 100%;
+   object-fit: contain;
+   transition: 0.5s linear;
+
+}
+
+
+
+.hoverEffect{
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    gap: 5px;
+    /* display: none; */
+
+}
+
+
+.hoverEffect p{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 5px;
+cursor: pointer;
+
+}
+
+.loadMore{
+    border: none;
+    background-color: none;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.gridContainer>div>img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+   }
+   
+
+
+
+@media all and (min-width:720px) and (max-width:1180px){
+
+    .gridContainer{
+        width: 100%;
+        margin: 0px auto;
+        columns: 2;
+        column-gap: 10px;
+        /* padding: 20px; */
+       
+    
+    }
+
+    .gridContainer> div{
+        width: 380px;
+        
+        break-inside: avoid;
+     
+    position: relative;
+   
+    }
+}
+
+
+
+@media all and (min-width:200px) and (max-width:719px){
+    .gridContainer{
+        width: 100%;
+        margin: 0px auto;
+        columns: 1;
+        column-gap: 10px;
+       
+       
+    
+    }
+
+    .gridContainer> div{
+        width: 380px;
+        break-inside: avoid;
+        position: relative;
+   
+    }
+
+}
